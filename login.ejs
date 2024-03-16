@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap-theme.min.css"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shCk/8E+5gRV2SN8eObVfGvNqoduOV+hXBo+Y" crossorigin="anonymous">
+</head>
+
+<body>
+    <%- include('partials/header') %>
+        <div class="container justify-content-center align-items-center d-flex  mt-5 pt-5">
+            <div class="card w-50 ">
+                <div class="card-header">
+                    <h3 class="text-primary">Login</h3>
+                </div>
+                <div class="card-body">
+                    <!-- for email address  -->
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email" name="emailAddress">
+                    </div>
+                    <!-- for password  -->
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" aria-describedby="emailHelp"
+                            placeholder="Enter the password" name="userPassword">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Sign in</button>
+
+                    <br>
+                    <br>
+
+                    <a href="/forgot" class="link">forgot password</a>
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
